@@ -1,0 +1,141 @@
+.push {
+  height: 30px;
+}
+
+.login-cont {
+  padding: 0 20px;
+  display: flex;
+  height: auto;
+}
+
+.login-form {
+  border-radius: 10px;
+  background-color: #f8f8ff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  max-width: 350px;
+  margin: 0 auto;
+  align-self: center;
+  padding: 0 20px 14px;
+  flex: 1;
+}
+
+.signup-form {
+  max-width: 500px;
+}
+
+.login-form-msg {
+  margin-top: 15px;
+  border: 2px solid #b32a25;
+  background-color: #caa7a6;
+  padding: 3px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 14px;
+  display: none;
+}
+
+.success {
+  border: 2px solid darkgreen;
+  background-color: #aee8ab;
+}
+
+.show {
+  display: block;
+}
+
+.login-form form {
+  padding-top: 20px;
+}
+
+.login-comp {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.input-comp.half {
+  width: 100%;
+}
+
+.input-comp.full {
+  width: 100%;
+}
+
+.login-comp label{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.login-comp input{
+  box-sizing:border-box;
+  width: 100%;
+  margin: 8px auto;
+  position: relative;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lightgrey;
+}
+
+.login-comp input:focus {
+  outline: none;
+}
+
+.login-comp input[name=submit] {
+  border: none;
+  background-color: darkgreen;
+  color: #f8f8ff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px;
+}
+
+#or {
+  text-align: center;
+  padding: 5px 0 15px;
+  border-bottom: solid 1px;
+}
+
+#signup-btn {
+  border: none;
+  background-color: darkgreen;
+  color: #f8f8ff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+#home {
+  text-align: center;
+}
+
+#home a{
+  text-decoration: none;
+}
+
+@media all and (min-width: 465px) {
+  .login-comp {
+    flex-direction: row;
+  }
+  .input-comp.half {
+    width: 50%;
+  }
+  .login-comp input{
+    box-sizing: unset;
+  }
+  .push {
+    height: 0;
+  }
+  .login-cont {
+    height: 100vh;
+  }
+}

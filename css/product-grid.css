@@ -1,0 +1,167 @@
+
+#product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.grid-ele {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  margin-bottom: 20px;
+  flex: 1 1 100%;
+}
+
+@media all and (min-width: 540px) {
+  .grid-ele {
+    flex: 1 1 50%;
+  }
+}
+
+@media all and (min-width: 810px) {
+  .grid-ele {
+    flex: 1 1 33%;
+  }
+
+}
+
+@media all and (min-width: 1200px) {
+  
+  #product-grid-section {
+    padding: 0 18%;
+  }
+}
+
+@media all and (min-width: 1525px) {
+  .grid-ele {
+    flex: 0 1 auto;
+  }
+}
+  
+.grid-ele-cont {
+  width: 220px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  background-color: #f8f8ff;
+}
+  
+.grid-ele img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+  
+.grid-ele-info {
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+  
+.grid-ele-info ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  width: 50%;
+  height: 60px;
+  top: 7px;
+  position: relative;
+  float: left;
+  list-style-type: none;
+}
+  
+.price {
+  font-size: 14px;
+}
+  
+.title {
+  font-weight: bold;
+}
+
+.quantity-wrapper {
+  padding-left: 30px;
+  float: right;
+  height: 32px;
+  overflow: hidden;
+  top: 28px;
+  position: relative;
+}
+
+.quantity-wrapper :first-child {
+  float: right;
+}
+
+.quantity-wrapper button {
+  width: 32px;
+  height: 32px;
+  border: solid #28602a 3px;
+  background-color: #28602a;
+  color: #f8f8ff;
+  border-radius: 3px;
+}
+
+.qty-add {
+  display: none;
+}
+
+.quantity-wrapper button:hover {
+  background-color: #f8f8ff;
+  color: #2b6b2d;
+  cursor: pointer;
+}
+
+.quantity-wrapper .griddy-add {
+  padding-top: 3px;
+  padding-left: 7px;
+  flex:1;
+  z-index: 1;
+  position: relative;
+}
+
+.quantity-btns-wrapper {
+  clear: right;
+  background-color: #28602a;
+  display: flex;
+  border-radius: 20px;
+  position: relative;
+  right: 30px;
+}
+
+.quantity-btns-wrapper.move-up {
+  animation-duration: 400ms;
+  animation-name: moveUp;
+}
+
+@keyframes moveUp {
+  from {
+    top: 0;
+  }
+
+  to {
+    top: -32px;
+  }
+}
+
+.keep-up {
+  top: -32px;
+}
+
+.quantity-btns-wrapper button {
+  background-color: #28602a;
+}
+
+.quantity {
+  background-color: #28602a;
+  color: #f8f8ff;
+  border: none;
+  text-align: center;
+  width: 35px;
+  padding-top: 4px;
+}
+
+.quantity-btns-wrapper input:focus {
+  outline: none;
+}
+

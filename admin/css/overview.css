@@ -1,0 +1,58 @@
+#main-right-title {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+.top-products-list {
+    padding-top: 10px;
+
+}
+
+.product-listing {
+    margin: 0 10px;
+    max-height: 452px;
+    overflow-y: auto;
+    padding-bottom: 5px;
+}
+
+.sale {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: grey solid 1px;
+    color: #a5abad;
+    justify-content: space-between;
+}
+
+.sales-header {
+    background-color: #49636e;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.sales-cont {
+    overflow-y: auto;
+    border-radius: 0 0 5px 5px;
+}
+
+.sale p{
+    white-space: nowrap;
+}
+
+.sale-total {
+    width: 25%;
+}
+
+.sale-customer {
+    width: 45%;
+    
+}
+
+.sale-time {
+    width: 30%;
+}

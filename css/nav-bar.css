@@ -1,0 +1,157 @@
+#top-nav {
+    background-color: #28602a;
+    display: flex;
+    align-items: center;
+    color: #f8f8ff;
+    height: 50px;
+    padding: 0 5% !important;
+    
+}
+
+.stick {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+}
+  
+.top-nav-ele {
+  display: flex;
+  align-items: center;
+}
+  
+#left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+  
+#right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  z-index: 2;
+  right: 5%;
+}
+
+.top-nav-user-ele a{
+  text-decoration: underline;
+  color: #f8f8ff;
+}
+
+.top-nav-user-ele a:hover{
+  text-decoration: none;
+  color: #dedede;
+}
+  
+#logo-img {
+  height: 50px;
+  margin-left: 0;
+}
+
+.top-nav-user-ele:first-child {
+  margin-right: 10px;
+}
+
+.welcome-text {
+  display: none;
+}
+  
+#profile-pic {
+  width: 30px;
+  height: 30px;
+  background-color: #f8f8ff;
+  border-radius: 50%;
+  left: 20px;
+}
+
+.logout-link {
+}
+
+.admin-link {
+}
+  
+/*links and dropdown menus*/
+  
+#top-nav-links {
+  height: 30px;
+  padding: 0 5% !important;
+  color: #1d293d;
+  background-color: #f8f8ff;
+  display: flex;
+  align-items: center;
+}
+  
+.nav-links:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+  
+.nav-links {
+  margin: 0 ;
+  text-decoration: none;
+  font-size: 12px;
+  color: #1d293d;
+  white-space: nowrap;
+}
+  
+.down-arrow {
+  border: solid #1d293d;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-top: 3px;
+  margin-left: 5px;
+  transform: rotate(45deg);
+  position: absolute;
+}
+  
+.nav-links {
+  padding: 7.5px;
+}
+  
+.nav-links:hover .nav-links-dropdown {
+  color: #f8f8ff;
+  display: block;
+}
+  
+.nav-links-dropdown {
+  margin: 8px -9px;
+  position: absolute;
+  display: none;
+  background-color: #1d293d;
+  width: 120px;
+  border-radius: 5px;
+  z-index: 2;
+}
+  
+.dropdown-links {
+  color: #f8f8ff;
+  margin: 17px;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 0;
+}
+  
+.dropdown-links:hover {
+  background-color: #34366e;
+}
+
+@media all and (min-width: 500px) {
+  .top-nav-user-ele {
+    font-size: 15px;
+  }
+  .welcome-text {
+    display: block;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  
+  #top-nav, #top-nav-links {
+    padding: 0 18% !important;
+  }
+  #right {
+    right: 18%;
+  }
+}

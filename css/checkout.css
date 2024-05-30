@@ -1,0 +1,142 @@
+#checkout-body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h3 {
+    color: darkgreen;
+}
+
+#checkout-title {
+    text-align: center;
+}
+
+#checkout-cont {
+    padding: 0 5% !important;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+}
+
+.order-comp {
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #f8f8ff;
+    padding: 0 20px 14px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 270px;
+}
+
+.order-comp h3{
+    text-align: center;
+}
+
+.checkout-form {
+    display: flex;
+    gap: 20px;
+}
+
+.input-comp {
+    padding-right: 34px;
+    width: 50%;
+}
+
+.input-comp.full {
+    width: 100%;
+}
+
+.checkout-form label{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.checkout-form input{
+    width: 100%;
+    margin: 8px auto;
+    position: relative;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgrey;
+}
+
+.checkout-form input:focus {
+    outline: none;
+}
+
+/*order summary*/
+
+.checkout-items {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.checkout-item {
+    margin-top: 5px;
+    padding: 5px 10px 7px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 0.5px lightgray;
+}
+
+.img-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.img-wrapper img {
+    width: 75px;
+    height: 68px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.img-wrapper ul{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+    
+}
+
+.item-right-wrapper {
+    margin-left: auto;
+    position: relative;
+}
+
+#checkout-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+#checkout-text ul {
+    list-style-type: none;
+}
+
+#left-list {
+    display: inline-block;
+    padding: 0;
+}
+
+#right-list {
+    display: inline-block;
+    text-align: right;
+}
+
+@media all and (min-width: 940px) {
+    #checkout-cont, #checkout-title {
+        padding: 0 20% !important;
+    }
+    #checkout-cont {
+        flex-direction: row;
+    }
+    #checkout-title, .order-comp h3{
+        text-align: left;
+    }
+    .order-comp {
+        width: 50%;
+    }
+}

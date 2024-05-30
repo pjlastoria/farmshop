@@ -1,0 +1,245 @@
+input[type="submit"] {
+    -webkit-appearance: none;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana;
+  background-color: white;
+}
+
+/*hero section*/
+
+#hero {
+  width: 100%;
+  height: 687px;
+  overflow: hidden;
+}
+
+#bg-img {
+  /* Preserve aspet ratio */
+  height: 687px;
+}
+
+#bg-img img {
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#hero-block {
+  min-width: 100%;
+  height: 687px;
+  position: absolute;
+  
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-half {
+  text-align: center;
+  position: relative;
+  margin: 40px 5%;
+  
+}
+
+#left-side {
+  color: #f8f8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#left-side h1 {
+  line-height: 50px;
+  font-size: 30px;
+  opacity: 1;
+}
+
+#right-side {
+  right: 0;
+  margin-top: 50px;
+  
+}
+
+#hero-right-container {
+  background-color: #f8f8ff;
+  z-index: 1;
+  margin-left: auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#hero-deal {
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  margin: 0;
+}
+
+#hero-headline {
+  margin-top: 0;
+  line-height: 10px;
+  font-size: 20px;
+}
+
+#sale-item-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sale-item {
+  height: 180px;
+  background-color: #d0dbd3;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.sale-item-wrapper {
+  padding: 5px;
+}
+
+.sale-item-img {
+  margin: 0 auto;
+  max-width: 100px;
+  height: 80px;
+}
+
+.sale-item-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.sale-item-wrapper ul {
+  list-style-type: none;
+  padding: 10px 0 0;
+  margin-top: 30px;
+}
+
+.sale-item-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sale-item-name {
+  font-size: 14px;
+}
+
+/*under the fold*/
+/*perk component*/
+
+#perk-cont {
+  padding: 20px 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #28602a;
+}
+
+.perk {
+  width: 80%;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.perk-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.perk-description {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.fade-up {
+  animation-duration: 1.5s;
+  animation-name: fadeUp;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    margin-top: 100px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@media all and (min-width: 620px) {
+  #hero, #bg-img, #hero-block {
+    height: 100vh;
+  }
+  .hero-half {
+    position: absolute;
+    width: 45%;
+    height: 500px;
+    text-align: left;
+  }
+  #right-side {
+    margin-top: 40px;
+  }
+  #hero-right-container {
+    width: 95%;
+    align-items: center;
+    height: 500px;
+  }
+  #hero-deal {
+    width: 80%;
+    padding: 0 20px;
+  }
+  #sale-item-cont {
+    flex-wrap: wrap;
+  }
+  .sale-item {
+    width: 45%;
+  }
+  #perk-cont {
+    padding: 80px 5%;
+    display: flex;
+    flex-direction: row;
+  }
+  .perk {
+    width: 30%;
+    padding: 0;
+    margin: 0 20px;
+  }
+  .perk-icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .hero-half {
+    width: 30%;
+    margin: 40px 18%;
+  }
+  #perk-cont {
+    padding: 80px 18%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #hero-headline {
+    font-size: 25px;
+  }
+  .sale-item {
+    width: 48%;
+  }
+  .sale-item-wrapper {
+    padding: 10px;
+  }
+}
